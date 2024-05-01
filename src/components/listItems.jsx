@@ -12,11 +12,11 @@ export default function ListItems({ coin }) {
               <span>{coin.marketCap}</span>
               <span>{coin.priceChange}</span>
         <span className="home-crypto-prices">
-          <span className="home-crypto-btc">{coin.priceBtc} BTC</span>
                   <span className="home-crypto-usd">{coin.priceUsd}$</span>
               </span>
               
       </Link>
-    </div>
+      </div>
+      
   );
 }

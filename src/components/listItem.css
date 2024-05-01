@@ -1,0 +1,30 @@
+.home-crypto-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.home-crypto-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.home-crypto-header, .home-crypto-content {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  align-items: center;
+}
+
+.header-item {
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.5rem;
+}
+
+.home-crypto-image img {
+  width: 100%;
+  height: auto;
+}
+
+/* Add more styles for responsiveness and attractive design */
