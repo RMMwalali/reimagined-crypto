@@ -1,4 +1,6 @@
+import React from "react";
 import { Link } from "react-router-dom";
+import './listItem.css'; // Import the CSS file
 
 export default function ListItems({ coin }) {
   return (
@@ -7,16 +9,15 @@ export default function ListItems({ coin }) {
         <span className="home-crypto-image">
           <img src={coin.image} />
         </span>
-              <span className="home-crypto-name">{coin.name}</span>
-              <span>{coin.symbol}</span>
-              <span>{coin.marketCap}</span>
-              <span>{coin.priceChange}</span>
+        <span className="home-crypto-name">{coin.name}</span>
+        <span className="home-crypto-symbol">{coin.symbol}</span>
+        <span className="home-crypto-marketCap">{coin.marketCap}</span>
+        <span className="home-crypto-priceChange">{coin.priceChange}%</span>
+
         <span className="home-crypto-prices">
-                  <span className="home-crypto-usd">{coin.priceUsd}$</span>
-              </span>
-              
+          <span className="home-crypto-usd">{coin.priceUsd}$</span>
+        </span>
       </Link>
-      </div>
-      
+    </div>
   );
 }

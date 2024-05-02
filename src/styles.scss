@@ -1,3 +1,6 @@
+$base-color: #1f2752;
+$secondary-color: #2f52c5;
+
 * {
   margin: 0;
   padding: 0;
@@ -19,7 +22,7 @@ input[type="text"] {
 }
 
 .width {
-  max-width: 600px;
+  max-width: 900px;
   margin: 0 auto;
   width: 92%;
   position: relative;
@@ -95,12 +98,24 @@ svg {
     align-items: center;
     padding: 20px 0;
     border-bottom: 1px solid #ddd;
+    border-radius: 12px;
+		padding: 1rem;
+		border: rgba(0, 0, 0, 0) 1px solid;
+		cursor: pointer;
+		& > * {
+			flex-basis: 33.33%;
+		}
+		&:hover {
+			border: lighten($secondary-color, 20)
+				1px solid;
+		}
+	}
   }
 
   span {
     display: block;
   }
-}
+
 .home-crypto-image {
   width: 50px;
 }

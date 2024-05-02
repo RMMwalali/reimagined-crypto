@@ -52,8 +52,8 @@ const api = create((set) => ({
         name: coin.item.name,
         image: coin.item.large,
         symbol: coin.item.symbol.toUpperCase(),
-        priceBtc: coin.item.price_btc.toFixed(10),
-        priceUsd: (coin.item.price_btc * btcPrice).toFixed(10),
+        priceBtc: coin.item.price_btc.toFixed(6),
+        priceUsd: (coin.item.price_btc * btcPrice).toFixed(6),
         marketCap: coin.item.data.market_cap,
         priceChange: coin.item.data.price_change_percentage_24h.usd,
       };
