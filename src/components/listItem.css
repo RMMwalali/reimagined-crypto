@@ -1,3 +1,63 @@
+/* Color Variables */
+:root {
+  --text-color: #333;
+  --header-bg-color: #f2f2f2;
+  --link-color: inherit;
+  --link-hover-color: white;
+}
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Utility Classes */
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+/* Link Styles */
+a {
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: var(--header-bg-color);
+}
+
+.header-logo {
+  flex: 1;
+}
+
+.header-title {
+  color: var(--link-hover-color);
+  padding-left: 30px;
+}
+
+.header-buttons {
+  display: flex;
+  align-items: center;
+  padding-right: 30px;
+}
+
+.spacer {
+  width: 10px;
+}
+
+/* Crypto Container Styles */
 .home-crypto-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -5,31 +65,27 @@
   padding: 1rem;
 }
 
-.home-crypto-link {
-  text-decoration: none;
-  color: inherit;
-}
-
-.home-crypto-header, .home-crypto-content {
+.home-crypto-header,
+.home-crypto-content {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   align-items: center;
 }
 
 .header-item {
-  font-weight: bold;
-  text-transform: uppercase;
   padding: 0.5rem;
 }
 
+/* Crypto Image Styles */
 .home-crypto-image img {
   width: 50px;
   height: auto;
   border-radius: 15px;
 }
+
+/* List Item Styles */
 .list-item-link {
-  text-decoration: none;
-  color: #333;
+  color: var(--text-color);
 }
 
 .list-item-container {
@@ -38,6 +94,44 @@
   padding: 0.75rem;
 }
 
+/* Crypto Details Styles */
+.home-crypto-name,
+.home-crypto-symbol,
+.home-crypto-priceChange,
+.home-crypto-priceUsd,
+.home-crypto-marketCap {
+  padding: 0.75rem;
+  font-size: 0.875rem;
+  text-align: left;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home-crypto-header,
+  .home-crypto-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .header-buttons,
+  .header-logo {
+    padding: 5px;
+  }
+
+  .header-title {
+    padding-left: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-crypto-header,
+  .home-crypto-content {
+    grid-template-columns: 1fr;
+  }
+
+  .home-crypto-image img {
+    width: 40px; /* Smaller image on mobile */
+  }
+}
 .home-crypto-name,
 .home-crypto-symbol,
 .home-crypto-priceChange,
@@ -57,16 +151,16 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 20px; /* Adjust padding as needed */
+  padding: 10px 20px; 
 }
 
 .header-logo {
-  flex: 1; /* Allow the logo to grow */
+  flex: 1; 
 }
 
 .header-title {
   text-decoration: none;
-  color: white; /* Adjust color as needed */
+  color: white; 
   font-weight: bold;
   padding-left: 30px;
 }
@@ -78,13 +172,13 @@
 }
 
 .spacer {
-  width: 10px; /* Adjust the width of the space between buttons */
+  width: 10px;
 }
 .crypto-header {
   display: flex;
   align-items: center;
-  background-color: #f2f2f2; /* Adjust background color as needed */
-  padding: 10px; /* Adjust padding as needed */
+  background-color: #f2f2f2; 
+  padding: 10px; 
 }
 
 .crypto-label {
