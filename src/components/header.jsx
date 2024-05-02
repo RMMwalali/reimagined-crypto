@@ -14,8 +14,6 @@ const LogoutButton = () => {
 					onClick={() => logout({ returnTo: window.location.origin })}>
 					LOG OUT
 				</button>
-				<br />
-				<Profile />
 			</>
 		);
 	}
