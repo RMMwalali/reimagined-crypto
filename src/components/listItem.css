@@ -38,17 +38,44 @@
   padding: 0.75rem;
 }
 
-.list-item-image {
+.home-crypto-name,
+.home-crypto-symbol,
+.home-crypto-priceChange,
+.home-crypto-priceUsd {
   padding: 0.75rem;
   font-size: 0.875rem;
+  font-family: "Poppins", sans-serif;
+}
+.home-crypto-marketCap{
+ padding: 1 rem;
+ font-size: 0.875rem;
+ font-family: "Poppins", sans-serif;
 }
 
-.list-item-name,
-.list-item-symbol,
-.list-item-marketCap,
-.list-item-priceChange,
-.list-item-priceUsd {
-  padding: 0.75rem;
-  font-size: 0.875rem;
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px; /* Adjust padding as needed */
 }
 
+.header-logo {
+  flex: 1; /* Allow the logo to grow */
+}
+
+.header-title {
+  text-decoration: none;
+  color: white; /* Adjust color as needed */
+  font-weight: bold;
+  padding-left: 30px;
+}
+
+.header-buttons {
+  display: flex;
+  align-items: center;
+  padding-right: 30px;
+}
+
+.spacer {
+  width: 10px; /* Adjust the width of the space between buttons */
+}

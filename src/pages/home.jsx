@@ -16,11 +16,10 @@ export default function home() {
       <Header />
       <header className="home-search">
         <div className="width">
-          <h2>Search for a coin</h2>
           <div className="home-search-input">
             <input
               type="text"
-              placeholder="Search"
+              placeholder="SEARCH"
               value={store.query}
               onChange={store.setQuery}
             />
@@ -29,7 +28,7 @@ export default function home() {
       </header>
       <div className="home-cryptos">
         <div className="width">
-          <h2> {!store.searched? 'Trending Coins': 'Searched Results'}</h2>
+          <h2> {!store.searched? 'TRENDING COINS': 'YOUR RESULTS'}</h2>
           {store.coins.map((coin) => {
             return <ListItems key={coin.id} coin={coin} />;
           })}

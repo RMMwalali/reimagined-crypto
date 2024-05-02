@@ -20,16 +20,16 @@ const LogoutButton = () => {
 
 const Header = () => {
   return (
-    <header className="header">
-      <div className="width">
+    <div className="header">
+      <div className="header-logo">
         <Link to="/" className="header-title">Crypto Tables</Link>
-        <div className="button-container">
-          <LoginButton />
-          <div className="button-gap"></div>
-          <LogoutButton />
-        </div>
       </div>
-    </header>
+      <div className="header-buttons">
+        <LoginButton />
+        <div className="spacer"></div> {/* Spacer for visible space */}
+        <LogoutButton />
+      </div>
+    </div>
   );
 };
 
