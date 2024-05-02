@@ -16,7 +16,6 @@ const LogoutButton = () => {
 					Log Out
 				</button>
 				<br />
-				<Profile />
 			</>
 		);
 	}
